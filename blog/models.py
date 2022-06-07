@@ -27,9 +27,8 @@ class Post(models.Model):
                               choices=STATUS_CHOICES,
                               default='draft')
 
-
-class Meta:
-    ordering = ('-publish',)
-
     def __str__(self):
         return self.title
+
+    class Meta:
+        ordering = ('-publish',)
