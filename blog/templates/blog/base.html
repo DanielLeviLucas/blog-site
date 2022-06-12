@@ -22,6 +22,9 @@
       <h3>
         <a href="{% url "blog:post_list" %}" class='black'>HOME</a>
       </h3>
+      <h3>
+        <a href="{% url "blog:post_search" %}" class="black">Search</a>
+      </h3>
       <h3>Latest posts</h3>
         {% show_latest_posts 3 %}
 
